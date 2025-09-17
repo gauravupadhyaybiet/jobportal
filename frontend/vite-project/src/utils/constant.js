@@ -1,4 +1,8 @@
-export const USER_API_END_POINT = "https://jobportal-40rf.onrender.com/api/v1/user";
-export const JOB_API_END_POINT = "https://jobportal-40rf.onrender.com/api/v1/job";
-export const APPLICATION_API_END_POINT = "https://jobportal-40rf.onrender.com/api/v1/application";
-export const COMPANY_API_END_POINT = "https://jobportal-40rf.onrender.com/api/v1/company";
+// apiEndpoints.js (or wherever you want)
+const BASE_URL = "https://jobportal-40rf.onrender.com"; // deployed backend
+// const BASE_URL = "http://localhost:8000"; // uncomment for local development
+
+export const USER_API_END_POINT = `${BASE_URL}/api/v1/user`;
+export const JOB_API_END_POINT = `${BASE_URL}/api/v1/job`;
+export const APPLICATION_API_END_POINT = `${BASE_URL}/api/v1/application`;
+export const COMPANY_API_END_POINT = `${BASE_URL}/api/v1/company`;
