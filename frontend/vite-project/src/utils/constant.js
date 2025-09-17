@@ -1,6 +1,7 @@
-// apiEndpoints.js (or wherever you want)
-const BASE_URL = "https://jobportal-40rf.onrender.com"; // deployed backend
-// const BASE_URL = "http://localhost:8000"; // uncomment for local development
+
+// apiEndpoints.js
+const BASE_URL =
+  import.meta.env.VITE_BACKEND_URL || "http://localhost:8000"; // fallback to localhost
 
 export const USER_API_END_POINT = `${BASE_URL}/api/v1/user`;
 export const JOB_API_END_POINT = `${BASE_URL}/api/v1/job`;
