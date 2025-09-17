@@ -14,13 +14,19 @@ app.use(express());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-const allowedOrigin = 'https://your-frontend-url.vercel.app"';
+
 
 // Use the cors middleware with specific origin
+const allowedOrigins = [
+  "https://jobportal-3-y62x.onrender.com", // frontend deployed URL
+  "http://localhost:5173"                  // local dev
+];
 app.use(cors({
-    origin: allowedOrigin,
-    credentials: true
+  origin: allowedOrigins,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true, // allow cookies if needed
 }));
+
 app.get("/",(req,res)=>{
     
     res.send("something is wrong");
