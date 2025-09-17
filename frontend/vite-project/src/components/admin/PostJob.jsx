@@ -35,6 +35,7 @@ const PostJob = () => {
         setInput({...input,companyId:selectedCompany._id})
         
     }
+        //  bdfkbjhbfbvdvfjkb
      const submitHandler = async (e) =>{
         e.preventDefault();
         try{
